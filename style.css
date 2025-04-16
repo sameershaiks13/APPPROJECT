@@ -9,11 +9,31 @@
 }
 
 body {
-    background: url("srm.jpg");
+    animation: backgroundSlide 10s infinite;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: center;
 }
+
+@keyframes backgroundSlide {
+    10% {
+        background-image: url("srm1.jpeg");
+    }
+    25% {
+        background-image: url("srm2.jpg");
+    }
+    50% {
+        background-image: url("srm3.jpg");
+    }
+    75% {
+        background-image: url("srm4.jpg");
+    }
+    100% {
+        background-image: url("srm5.jpg");
+    }
+}
+
 
 .wrapper {
     display: flex;
@@ -52,7 +72,7 @@ body {
 .nav-menu ul li .link {
     text-decoration: none;
     font-weight: 500;
-    color: #fff;
+    color:white;
     padding-bottom: 15px;
     margin: 0 25px;
 }
@@ -122,7 +142,7 @@ body {
 }
 
 .top span {
-    color: #fff;
+    color: white;
     font-size: small;
     padding: 10px 0;
     display: flex;
@@ -149,7 +169,7 @@ header {
 
 .input-field {
     font-size: 15px;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.4);
     color: #fff;
     height: 50px;
     width: 100%;
